@@ -1,0 +1,319 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/vn.game.speedorder.models"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GameActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_scores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/turquoise"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:shadowColor="@color/greensea"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowRadius="1.5"
+            android:text="999"
+            android:textColor="@color/ALIZARIN"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <vn.game.speedorder.models.NotificationButton
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" >
+            </vn.game.speedorder.models.NotificationButton>
+
+            <vn.game.speedorder.models.NotificationButton
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" >
+            </vn.game.speedorder.models.NotificationButton>
+
+            <vn.game.speedorder.models.NotificationButton
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" >
+            </vn.game.speedorder.models.NotificationButton>
+
+            <!--
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp" >
+
+                <Button
+                    android:id="@+id/image2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/button_selector"
+                    android:src="@drawable/button_selector"
+                    android:text="6"
+                    android:textColor="@color/ALIZARIN"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/image2"
+                    android:layout_alignTop="@id/image2"
+                    android:layout_marginRight="-10dp"
+                    android:layout_marginTop="-1dp"
+                    android:src="@drawable/o2"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp" >
+
+                <Button
+                    android:id="@+id/image3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/button_selector"
+                    android:src="@drawable/button_selector"
+                    android:text="4"
+                    android:textColor="@color/ALIZARIN"
+                    android:textSize="60sp"
+                    android:textStyle="normal|bold"
+                    android:typeface="sans" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/image3"
+                    android:layout_alignTop="@id/image3"
+                    android:layout_marginRight="-10dp"
+                    android:layout_marginTop="-1dp"
+                    android:src="@drawable/o3"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp" >
+
+                <Button
+                    android:id="@+id/image4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/button_selector"
+                    android:src="@drawable/button_selector"
+                    android:text="7"
+                    android:textColor="@color/ALIZARIN"
+                    android:textSize="60sp"
+                    android:textStyle="normal|bold"
+                    android:typeface="sans" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/image4"
+                    android:layout_alignTop="@id/image4"
+                    android:layout_marginRight="-10dp"
+                    android:layout_marginTop="-1dp"
+                    android:src="@drawable/o4"
+                    android:visibility="visible" />
+            </RelativeLayout>
+            -->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/lo_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/tv_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/WISTERIA"
+                android:gravity="center_vertical"
+                android:padding="20dp"
+                android:text="START"
+                android:textColor="@color/CARROT"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/im_guide"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_alignLeft="@id/tv_click"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/image_guide_hand" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <vn.game.speedorder.EndGameLayout
+        android:id="@+id/endGamePopup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/score_thmb"
+                android:layout_width="280dp"
+                android:layout_height="250dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:padding="40dp"
+                android:src="@drawable/rectangle" />
+
+            <TextView
+                android:id="@+id/tv_your_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="1233"
+                android:textColor="@color/ALIZARIN"
+                android:textSize="40sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            android:background="@color/ALIZARIN" >
+
+            <TextView
+                android:id="@+id/tv_achieve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/greensea"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="YOUR ACHIEVEMENTS"
+                android:textColor="@color/timthan"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/im_your_best"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_achieve"
+                android:src="@drawable/ic_first" />
+
+            <TextView
+                android:id="@+id/tv_your_best"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/im_your_best"
+                android:layout_below="@id/tv_achieve"
+                android:layout_toRightOf="@id/im_your_best"
+                android:gravity="center"
+                android:text="8999" />
+
+            <ImageView
+                android:id="@+id/im_your_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/im_your_best"
+                android:src="@drawable/ic_second" />
+
+            <TextView
+                android:id="@+id/tv_your_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/im_your_second"
+                android:layout_below="@id/tv_your_best"
+                android:layout_toRightOf="@id/im_your_second"
+                android:gravity="center"
+                android:text="8888" />
+
+            <ImageView
+                android:id="@+id/im_your_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/im_your_second"
+                android:src="@drawable/ic_third" />
+
+            <TextView
+                android:id="@+id/tv_your_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/im_your_third"
+                android:layout_below="@id/tv_your_second"
+                android:layout_toRightOf="@id/im_your_third"
+                android:gravity="center"
+                android:text="7777" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" >
+
+                <ImageButton
+                    android:id="@+id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.30"
+                    android:background="@drawable/rate_btn_selector" />
+
+                <ImageButton
+                    android:id="@+id/replay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.30"
+                    android:background="@drawable/replay_btn_selector" />
+            </LinearLayout>
+        </RelativeLayout>
+    </vn.game.speedorder.EndGameLayout>
+
+</FrameLayout>
